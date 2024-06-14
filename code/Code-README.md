@@ -1,8 +1,8 @@
-#Code Description
+# Code Description
 
 In this file, you can read over the code files to see the logic of this project. The numbers in the file names reflect the order of the different files during the project. We have same procedure for data within any period, so we put the latest code we developed for 2020 here. 
 
-##1_code_for_extracting_information
+## 1_code_for_extracting_information
 
 We will need to extract information for each of the four years from 2018~2021. The code is exactly the same except for the years and one differences from the original data: we can use safegraph_place_id to extract POIs before 2021 and we need to use placekey in 2021. We put the code for 2020 and 2021 here as examples.
 
@@ -14,7 +14,7 @@ We will need to extract information for each of the four years from 2018~2021. T
 
 The inputs are data from data/1_data_for_extracting_information, and the outputs will be the 4 files under data/2_data_for_PSO_Calibration.
 
-##2_code_for_PSO_calibration
+## 2_code_for_PSO_calibration
 
 4.	4_4_PSO_2018_NYC_norm_2_PSO_30.py, 4_4_PSO_2018_NYC_norm_2_PSO_30.sbatch: example code for running PSO. There are several lines in the .py file together with the sbatch file that are working on the large-scale computing part. Based on these two files, we create the code of each normalization and PSO combination for each year. Since the sbatch file shows settings of the server and the paper review is anonymous, we don’t share the sbatch code. Please contact us if you need it.
 
@@ -27,7 +27,7 @@ b.	sbatches_commands_20182019/2020/2021.txt: this txt file is used to submit the
 c.	sub_code: this folder is to store the code for each combination. Since these follow almost same structure as the templates (4_4_PSO_2018_NYC_norm_2_PSO_30.py and 4_4_PSO_2018_NYC_norm_2_PSO_30.sbatch), we don’t upload this folder. Please contact us if you need it.
 The inputs are the 4 tables under data/2_data_for_PSO_calibration, and the outputs will be the calibration results obtained by each core on the server.  To make the folder less messy, we only put the aggregated results of 6493 CBGs for each combination in each year under each folder in data/3_PSO_results/PSO_calirabtion_results. The code will be provided in code/3_code_for_combining_PSO_results.
 
-##3_code_for_combing_PSO_results
+## 3_code_for_combing_PSO_results
 
 6.	concate_params_2018/2019/2020/2021.py: these files are to combine the results obtained by each core on the server for each combination of each year into an aggregated one.
 
@@ -35,7 +35,7 @@ The inputs are the 4 tables under data/2_data_for_PSO_calibration, and the outpu
 
 The inputs of this folder are the calibrated results from each core on the server, and the outputs will be the results for each combination of each year in data/3_PSO_results/PSO_calirabtion_results, and the average/median cost matrices of each year in data/3_PSO_results/simulated_annealing_data_2018~2021.
 
-##4_analysis
+## 4_analysis
 
 8.	1_distribution_visualization_by_year.ipynb: this file is to visualize the yearly distributions from 2018 to 2021 for the calibrated parameter values.
 
