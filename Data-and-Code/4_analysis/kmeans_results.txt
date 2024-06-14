@@ -1,0 +1,32 @@
+------
+Method:	KMeans
+Number of clusters:	5
+Initialization method:	KMeans++
+Initialization re-runs:	150
+Maximum iterations:	1000
+Transformation:	Standardize (Z)
+Distance function:	Euclidean
+
+Cluster centers:
+|  |med_ageE|bachelor_d|med_hh_inc|whiteE  |blackE   |asianE   |hispanicE|
+|--|--------|----------|----------|--------|---------|---------|---------|
+|C1|39.654  |0.310346  |73040.8   |0.731252|0.0547065|0.115897 |0.185265 |
+|C2|33.709  |0.119724  |42229.7   |0.269545|0.237779 |0.0603741|0.642572 |
+|C3|37.683  |0.187139  |60018.6   |0.114042|0.743788 |0.0342363|0.1485   |
+|C4|40.8357 |0.638348  |139124    |0.78884 |0.0404161|0.11012  |0.0921167|
+|C5|41.0815 |0.227066  |63064.2   |0.290526|0.0544837|0.511942 |0.183776 |
+
+The total sum of squares:	40460
+Within-cluster sum of squares:
+|  |Within cluster S.S.|
+|--|-------------------|
+|C1|4743.69            |
+|C2|3069.24            |
+|C3|2546.34            |
+|C4|2569.79            |
+|C5|2125.65            |
+
+The total within-cluster sum of squares:	15054.7
+The between-cluster sum of squares:	25405.3
+The ratio of between to total sum of squares:	0.627911
+
